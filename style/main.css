@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+:root{
+    --vermelho: #E50914;
+    --cinza: rgb(20, 20, 20);
+}
+
+*{
+    /* Reset CSS */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Voltando ao normal */
+    font-family: 'PT Sans', sans-serif;   
+}
+
+/* CENTRAL */
+body{
+    background-color: rgb(10, 10, 10); 
+    color: white;
+}
+
+/* HEADER */
+.container {
+    background-color: black;
+    padding: 10px;
+    padding-left: 35px;
+    position: initial;
+    /* Centralizar verticalmente */
+    display: flex;    
+    align-items: center;   
+    flex-direction: row;
+}
+
+.container nav{
+    padding-left: 35px;
+    
+    display: inline;
+    right: 20px;
+}
+.container nav a{    
+    color: rgb(186, 186, 186);
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+.container nav a:hover{    
+    color: white;
+}
+.container nav a:last-child{
+    padding-right: 0;
+}
+
+
+/* FILME PRINCIPAL */
+
+.filme-principal{
+    height: 500px;
+    background:linear-gradient(rgb(0,0,0,.70),rgb(0,0,0,.50)), url(/img/capa-vikings.jpg);
+   
+    height: 450px;
+    background-size: cover;
+      
+}
+
+.container-filme-principal img{
+    width: 200px;
+}
+
+.container-filme-principal{
+    position: relative;
+    top: 30px;
+    padding: 40px 0 0 10%;
+    display: flex;
+}
+
+.container-sinopse{
+    padding-left: 30px;
+}
+
+.container-filme-principal h3{
+    font-size: 50px;
+    
+}
+
+.container-filme-principal p{
+    padding-top: 10px;
+    display: grid;
+    width: 410px;
+}
+
+main .container-filme-principal .botao{
+    background-color: var(--vermelho); 
+
+    
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    
+    width: 180px;
+    height: 50px;
+    border: 0;
+    border-radius: 4px;
+}
+main .container-filme-principal .botao:hover{
+    background-color: rgba(0, 0, 0, 5);
+    border: 3px solid var(--vermelho); 
+    
+    cursor: pointer;
+}
+main .botao{
+    margin-top: 30px;
+
+}
+main .botao:last-child{
+    margin-left: 2px;
+    width: 250px;
+}
+
+main .botao i {
+    margin-right: 5px;
+}
+
+/*  carrossel */
+.box-filme{    
+    height: 100%;
+    
+    cursor: pointer;    
+}
+
+
+
+.owl-stage {
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
